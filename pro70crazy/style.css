@@ -1,0 +1,93 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  color: white;
+  cursor: url("/images/cursor/main.png"), default;
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+}
+h2 {
+  color: red;
+  font-family: verdana;
+}
+h3 {
+  color: red;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+p {
+  color: white;
+  font-family: monospace; 
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
+}
+a {
+  color: lime;
+  font-family: monaco;
+  cursor: url("/images/cursor/click.png"), default;
+}
+i {
+  color: white;
+  font-family: monaco;
+  
+}
+u {
+  color: red;
+}
+b {
+  color: red;
+  font-family: monaco;
+}
+marquee {
+  color: red;
+  font-family: monaco;
+}
+.copyright {
+  color: white;
+  font-family: monaco;
+  text-align: center;
+}
+label {
+  color: white;
+  font-family: "Lucida Console", "Monaco", "Monospace";
+}
+.footer {
+  color: white;
+  font-family: monaco;
+  text-align: center;
+}
+.attribution {
+  color: white;
+  font-family: monaco;
+  text-align: center;
+}
+strong {
+  color: red;
+  font-family: "Monospace", "Lucida Console";
+}
+textarea {
+  cursor: url("/images/cursor/text.png"), default;
+}
+button {
+  cursor: url("/images/cursor/click.png"), default;
+}
+.button {
+  cursor: url("/images/cursor/click.png"), default;
+}
+.submit {
+  cursor: url("/images/cursor/click.png"), default;
+}
+.text {
+  cursor: url("/images/cursor/text.png"), default;
+}

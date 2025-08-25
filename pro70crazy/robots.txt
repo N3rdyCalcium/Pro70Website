@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /HTMLtest/
+Disallow: /coming_soon.html
+Allow: /questions.html
+Disallow: /error/
+Disallow: /.htaccess
+Disallow: /style.css
+Allow: /HTMLtest/submit-file/
+Disallow: /HTMLtest/pending/
+
+User-agent: Googlebot
+Allow: /HTMLtest
+Allow: /
+Disallow: /questions
+Disallow: /style.css
+Disallow: /about.html
+Disallow: /classic.html
+Disallow: /faq.html
+Disallow: /coming_soon.html
+Disallow: /images/favicon/
+Disallow: /error
+Disallow: /faker-robots.txt
+
+Sitemap: https://pro70crazy.repl.co/sitemap.xml
