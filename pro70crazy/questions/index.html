@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questions</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+<body>
+<h1>Questions</h1>
+<form name="question" action="/questions/questions.php" method="post">
+<!-- if it uses a link to script, don't need to use the PHP file but it's not deleted in case if it doesn't work.-->
+<h3>Ask a Question [BETA]</h3>
+<!--Adds textarea field to write a question-->
+<textarea name="ask-question" rows=5 cols=25 placeholder="What are you doing?" id="display"></textarea><br />
+<!--Submit button redirects to questions.php, and proceeds to another action in questions.php.-->
+<input type=submit value=Ask name=ask>
+<br>
+<p>NOTE: This is a beta version, if you clicked Ask after typing the question in field, the question is not sent. If you want to ask, you will need to ask via <a href="mailto:calvinbernardtanuri@gmail.com">Email</a> temporarily. you can help make this quick by sending me tips on how to send it to a spreadsheet, email, etc. via <a href="mailto:calvinbernardtanuri@gmail.com">Email</a>.</p>
+</form>
+  
+  <a href="/">Go back home</a>
+  <br>
+<!--displays the latest answered user-submitted question below-->
+<p>No Questions available yet!</p>
+  <h2>Be the First to ask!</h2>
+  <h3>Type the question in the text box then click Ask</h3>
+  <a href="/faq.html">or go to FAQ</a>
+</body>
+</html>
