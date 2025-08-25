@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title marquee behavior="scroll" direction="right" scrollamount="5">some html blink and marquee html</title>
+    <style>
+        blink {
+            color: #ff0000;
+            size: 15px;
+            font-weight: bold:
+        }
+          .blink {
+        animation: blinker 0.6s linear infinite;
+        color: #ff0000;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+      .blink-one {
+        animation: blinker-one 1s linear infinite;
+      }
+      @keyframes blinker-one {
+        0% {
+          opacity: 0;
+        }
+      }
+      .blink-two {
+        animation: blinker-two 1.4s linear infinite;
+      }
+      @keyframes blinker-two {
+        100% {
+          opacity: 0;
+        }
+      }
+      .blink-three {
+        animation: blinker 0.1s linear infinite;
+    </style>
+</head>
+  <body>
+<h2 style="text-align: left;">&nbsp;&lt;MARQUEE&gt;</h2>
+<marquee direction="left">normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling</marquee>
+<marquee behavior="scroll" direction="down" scrollamount="5">hi Kamex</marquee>
+<marquee behavior="scroll" direction="up" scrollamount="1">hi MikeGeno</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="15">hi TheMaskedChris</marquee>
+<marquee behavior="scroll" direction="right" scrollamount="12">hi Bluskys</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20">hi TaeYai</marquee>
+<marquee behavior="scroll" direction="right" scrollamount="45"">hi ShinyTama</marquee> <br>
+<h4>code for marquee: </h4>
+<code>&lt;marquee direction="left">normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling normal marquee scrolling&lt;/marquee></code>
+<h2 style="text-align: left;">&nbsp;&lt;BLINK&gt;</h2>
+<blink>blink using the normal CSS (not supported by most browsers)</blink> <br>
+<h4>code for blink using the normal CSS: </h4>
+<div class=code>
+  CSS: 
+  <pre><code>
+    blink {
+            color: #ff0000;
+            size: 15px;
+            font-weight: bold:
+        }
+  </code></pre>
+  HTML: 
+  <code>&lt;blink>blink using the normal CSS (not supported by most browsers)&lt;/blink></code>
+</div>
+    <p class="blink">blink using the latest CSS (CSS3)</p>
+    <p class="blink">hi RetroSpecter</p>
+    <p class="blink blink-one">hi CesarFever</p>
+    <p class="blink blink-two">hi StickyBM</p>
+    <p class="blink blink-three">hi Robo_H0p3</p>
+    <h4>code for blink using CSS3: </h4>
+    <div class=code>
+      CSS: 
+      <pre><code>
+        .blink {
+        animation: blinker 0.6s linear infinite;
+        color: #ff0000;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+      </code></pre>
+    HTML: 
+      <code>&lt;p class="blink">blink using the latest CSS (CSS3)&lt;/p></code>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Web Hosting test files</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="author" content="Calvin B. Tanuri">
+    <meta name="keywords" content="HTMLtest, html test, Web Hosting, HTML test Files, Web hosting test files html, web hosting test files">
+    <meta name="description" content="This website contains test files for HTML and PHP for testing new some features you don't know. You can took part as a developer to submit your own file.">
+  </head>
+  <h1>Web Hosting test files</h1>
+  <script>
+    // SET UP SERVER
+let app = require('express')();
+let bodyParser = require('body-parser');
+app.set('view engine', 'pug')
+app.use(bodyParser.urlencoded({ extended: true }));
+
+//GET HOME PAGE
+app.get('/', function(req, res) {
+  // CHECK IF HEADERS ARE SET
+	if (req.get('X-Replit-User-Id')) {
+		res.render('index', {
+		  // GIVE ALL THE KNOWN USER INFORMATION
+			user: {
+				id: req.get('X-Replit-User-Id'),
+				name: req.get('X-Replit-User-Name'),
+				roles: req.get('X-Replit-User-Roles')
+			}
+		});
+  // OTHERWISE, DISPLAY PROMPT TO LOG IN
+	} else {
+		res.render('index', {
+			user: false
+		});
+	}
+});
+  </script>
+  <h3>User-submitted files</h3>
+  <a href="/HTMLtest/submit-file/">Submit your file</a> <br>
+  <p>Not available yet!</p>
+  <br><br>
+  <h3>Choose file to start the test</h3>
+  <a href="/HTMLtest/marquee-and-blink.html">marquee-and-blink.html</a><br>
+  <a href="/HTMLtest/file-reader">file-reader</a> <br>
+  <a href="/HTMLtest/clock.html">clock.html</a> <br>
+  <a href="/HTMLtest/web-storage-api.html">web-storage-api.html</a> <br>
+  <a href="/HTMLtest/frames">frames</a> <br>
+  <a href="/HTMLtest/admins-users">admins-users</a> <br>
+  <a href="/HTMLtest/lorem-ipsum.html">lorem-ipsum.html</a> <br>
+  <a href="/HTMLtest/multiple-choice/">multiple-choice</a> <br>
+  <a href="/HTMLtest/language/">language</a> <br>
+  <a href="/HTMLtest/PT013_MAX7219_BrowserGUI-master/">PT013_MAX7219_BrowserGUI-master</a> <br>
+  <a href="/HTMLtest/fibonacci/">fibonacci</a> <br>
+  <a href="/HTMLtest/google-oauth2.html">google-oauth2.html</a> <br>
+  <a href="/HTMLtest/alert.html">alert.html</a> <br>
+  <a href="/HTMLtest/form.html">form.html</a> <br>
+  <a href="/HTMLtest/scrolling_text/">scrolling_text</a> <br>
+  <a href ="/HTMLtest/what-is-love.html">what-is-love</a> <br>
+  <a href="/HTMLtest/random-code.php">random-code.php</a> <br>
+  <br>
+  <a href="/">Go back home</a>
+  </body>
+</html>

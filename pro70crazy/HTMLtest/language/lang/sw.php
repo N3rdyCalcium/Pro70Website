@@ -1,0 +1,3 @@
+<?php
+$Message="Välkommen till ";
+?>

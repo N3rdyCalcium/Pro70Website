@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google OAuth2 Test</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="168047558646-ljcva7s2cti78gqjmjk5rc110t1ju7vj.apps.googleusercontent.com">
+  </head>
+  <body>
+    <p>Sign in to Google</p>
+    <br>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <script>
+      // auth2 is initialized with gapi.auth2.init() and a user is signed in.
+
+if (auth2.isSignedIn.get()) {
+  var profile = auth2.currentUser.get().getBasicProfile();
+  document.write('ID: ' + profile.getId());
+  document.write('Full Name: ' + profile.getName());
+  document.write('Given Name: ' + profile.getGivenName());
+  document.write('Family Name: ' + profile.getFamilyName());
+  document.write('Image URL: ' + profile.getImageUrl());
+  document.write('Email: ' + profile.getEmail());
+}
+    </script>
+    <br><br>
+    <a href="#" onclick="signOut();">Sign out</a>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+  </body>
+</html>

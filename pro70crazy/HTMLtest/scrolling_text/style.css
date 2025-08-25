@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+
+.led-container {
+  overflow: hidden;
+  background-color: black;
+  height: 99px;
+  width: 100%;
+}
+
+.led-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: led-scroll 3s linear infinite;
+  color: green;
+  font-size: 80px;
+  padding-left: 100%;
+}
+
+@keyframes led-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
